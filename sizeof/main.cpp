@@ -6,6 +6,7 @@ int main() {
   cout << "char size:" << sizeof(char) << '\t';
   cout << "int size:" << sizeof(int) << '\t';
   cout << "float size:" << sizeof(float) << '\t';
+  cout << "uint32_t size:" << sizeof(uint32_t) << "\t"; 
   cout << " '' size:" << sizeof("") << '\t'; // "":1 byte
   cout << '\n';
 
