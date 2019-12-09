@@ -1,7 +1,7 @@
 #include <iostream>
  
 // enum that takes 16 bits
-enum smallenum: int16_t
+enum smallenum: int16_t // c++11 class 派生类:基类
 {
     a,
     b,
@@ -10,6 +10,7 @@ enum smallenum: int16_t
  
  
 // color may be red (value 0), yellow (value 1), green (value 20), or blue (value 21)
+// 创建新的数据类型color
 enum color
 {
     red,
