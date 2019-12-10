@@ -50,12 +50,12 @@ std::ostream& operator<<(std::ostream& os, color c)
  
 std::ostream& operator<<(std::ostream& os, altitude al)
 {
-    return os << static_cast<char>(al);
+    return os << static_cast<char>(al); //强行将al转换为char类型
 }
  
 int main()
 {
-    color col = red;
+    color col = red;  //新建color数据类型col，值为red
     altitude a;
     a = altitude::low;
  
