@@ -17,7 +17,7 @@ ostream& operator<<(ostream& os, const Date& dt)
 {
     // 输入os是一个std::cout对象,和一个Date对象。因为都有引用
     os << "data:" << dt.mo << '/' << dt.da << '/' << dt.yr << "\n";
-    return os;
+    return os;  // 重写了os操作 所以返回也必须是os
 }
 
 int main()
