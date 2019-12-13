@@ -8,7 +8,7 @@ int main ()
   int size[] = {10, 4}; //size[] is int list, 10 row 4 col
   int count = size[0] * size[1];
   std::cout << count << "\n";
-  // get a memory to store data
+  // get a memory to store data,使用前现在cpu上申请一段内存
   int* ptr = reinterpret_cast<int*>(malloc(count * sizeof(int)));
 
   std::vector<std::vector<int>> data; // data matrix
