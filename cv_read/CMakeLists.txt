@@ -12,10 +12,11 @@ project(cv_read)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 find_package(OpenCV REQUIRED)
-include_directories(${OpenCV_INCLUDE_DIRS})
-
-
 
 add_executable(cv_read main.cpp)
 
-target_link_libraries(cv_read ${OpenCV_LIBS} /usr/lib/x86_64-linux-gnu/libopencv_highgui.so)
+# opencv2.4.9 install in /usr/local/opencv2
+message(OpenCV_DIR: ${OpenCV_DIR})
+message(OpenCV_LIBS: ${OpenCV_LIBS})
+
+target_link_libraries(cv_read ${OpenCV_LIBS})

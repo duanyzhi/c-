@@ -9,14 +9,14 @@ using std::string;
 
 int main() {
   std::cout << "OPENCV READ IMAGE .." << std::endl;
-  printf("OPENCV_VERSION: %s\r\n", OPENCV_VERSION);
+  printf("OPENCV_VERSION: %s\r\n", CV_VERSION);
 
-  string img_name = "im.jpg"
+  string img_name = "../im.jpg";
 
   cv::Mat im = cv::imread(img_name);
 
   cv::imshow("Image", im);
-  cv::cvWaitKey(0);
+  cv::waitKey(0);
 
   return 0;
 }
