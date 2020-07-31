@@ -12,7 +12,7 @@ int main()
     // we'll incur the cost of copying str
     v.push_back(str);
     std::cout << "After copy, str is \"" << str << "\"\n";
-    std::cout << "vector \"" << v[0] << "," << v[1] << "\"\n";
+    std::cout << "vector \"" << v[0] << "\"\n";
  
     // uses the rvalue reference push_back(T&&) overload, 
     // which means no strings will be copied; instead, the contents
@@ -21,6 +21,6 @@ int main()
     v.push_back(std::move(str));
     std::cout << "After move, str is \"" << str << "\"\n";
  
-    std::cout << "The contents of the vector are \"" << v[0]
-                                         << "\", \"" << v[1] << "\"\n";
+    std::cout << "The contents of the vector are \"" << v[0] \
+              << " and " << v[1] << "\"\n";
 }
