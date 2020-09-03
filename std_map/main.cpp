@@ -33,6 +33,16 @@ int main()
     std::cout<<"word 'sun' found"<<std::endl;
   if(mapOfWords.find("mars") == mapOfWords.end())
     std::cout<<"word 'mars' not found"<<std::endl;
+
+
+  ////////////////////////////////////////////////////
+  std::map<std::string, int> data_map = {
+    {"a", 0},
+    {"b", 1},
+    {"c", 3}
+  };
+
+  std::cout << data_map["a"] << std::endl;
   return 0;
 }
 
