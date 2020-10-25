@@ -17,7 +17,7 @@ void A::fun()
 
 int main()
 {
-  A a;
+  A a;   // 实例
   a.fun();
   return 0;
 }
