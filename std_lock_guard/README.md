@@ -11,4 +11,11 @@ std::mutex的死锁情况:第一个线程上锁但是在unlock之前程序失败
 即出现了死锁情况.
 
 
+## lock guard
+```shell
+g++ lock_guard.cpp -o mian -lpthread -std=c++11
+
 std::lock_guard在创建时构造并加锁,在离开作用域时析构并解锁.
+
+
+多线程之间的内存是共享的,比如count就是同一个.
