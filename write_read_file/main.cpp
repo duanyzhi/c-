@@ -19,5 +19,20 @@ int main () {
     }
     f.close();
   }
+
+  std::ifstream doc("doc");
+  doc.seekg(0, doc.end);
+  std::cout << doc.tellg() << "\n";
+  const int len = doc.tellg();
+  doc.seekg(0, doc.beg);
+  char* buffer = new char [len];
+  doc.read(buffer, len);
+  if (doc) std::cout << "read successfully.\n";
+  else std::cout << "only " << doc.gcount() << "could be read.";
+  doc.close();
+  
+  for (int i=0; i<len; i++) std::cout << buffer[i];
+  std::cout << "\n";
+  delete[] buffer;
   return 0;
 }
