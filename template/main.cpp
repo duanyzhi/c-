@@ -23,7 +23,7 @@ int main()
 { 
   cout << myMax<int>(3, 7) << endl;  // Call myMax for int 
   cout << myMax<double>(3.0, 7.0) << endl; // call myMax for double 
-  cout << myMax<char>('g', 'e') << endl;   // 调用特化模版 
+  cout << myMax('g', 'e') << endl;   // 调用特化模版, 类型可以通过输入参数推导，所以可以不写<char> 
   
   return 0; 
 }

@@ -19,3 +19,20 @@ std::lock_guard在创建时构造并加锁,在离开作用域时析构并解锁.
 
 
 多线程之间的内存是共享的,比如count就是同一个.
+
+```
+
+
+
+
+
+## unique_lock
+
+**parameters**
+
+```c++
+lock.try_lock();   // 尝试是否可以加锁
+lock.unlock();     // 手动解锁
+```
+
+unique_lock功能基本和lock_guard一样，但是比lock guard更加灵活。
