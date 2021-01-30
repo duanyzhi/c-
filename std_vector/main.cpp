@@ -35,6 +35,7 @@ int main()
     v.pop_back(); // Removes the last element of the container.
     std::cout << "after_pop_back:" << *(v.end()-1) << '\n';
 
+    std::cout << "get 0 element use .at():" << v.at(0) << "\n";
     v.clear();
     std::cout << "clear size:" << v.size() << '\n';
 }
