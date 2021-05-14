@@ -43,3 +43,16 @@ gs             0x0	0
 
 ```
 
+
+
+另一种查看生成的汇编语言的方法:
+
+```shell
+g++ -c main.cpp
+# generate main.o函数
+objdump -d main.o  # dump
+
+# 或者
+g++ -S main.cpp  # generate main.s文件
+```
+
